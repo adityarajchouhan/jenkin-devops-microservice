@@ -16,6 +16,10 @@ pipeline {
             steps {
                 echo 'Deploying....'
             }
-        }
+        } post {
+	    always {
+		echo 'I ma awesome. I run always'
+	}
+	}
     }
 }
